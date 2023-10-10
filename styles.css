@@ -1,0 +1,100 @@
+body {
+    font-family: 'Arial', sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #121212; /* Dark background */
+    color: #e0e0e0; /* Light text */
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh; /* full viewport height */
+}
+
+#intro, #projects, #contact {
+    padding: 20px;
+    max-width: 800px;
+    margin: 40px auto;
+    background-color: #1f1f1f;
+    box-shadow: 0 0 10px rgba(0,0,0,0.1);
+}
+
+h1, h2, h3 {
+    color: #ff8c00; /* Dark orange for headers */
+}
+
+#intro {
+    position: relative; /* Make it a positioning context */
+}
+
+.content-wrap {
+    flex: 1; /* allows this section to grow and consume available space */
+}
+
+.profile-pic {
+    position: absolute; /* Absolutely position the image */
+    top: 10px; /* Space from the top */
+    right: 10px; /* Space from the right */
+    width: 150px;
+    height: 150px;
+    border-radius: 50%;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.6);
+}
+
+.content-wrapper {
+    padding-right: 170px; /* Space on the right to prevent overlap with the image */
+}
+
+.grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(200px, 1fr));
+    gap: 20px;
+}
+
+.card {
+    padding: 20px;
+    border: 1px solid #e0e0e0;
+    transition: transform 0.3s, box-shadow 0.3s;
+}
+
+a {
+    display: inline-block;
+    margin-top: 10px;
+    padding: 5px 10px;
+    border: 1px solid #0077cc;
+    color: #0077cc;
+    text-decoration: none;
+}
+
+a:hover {
+    background-color: #0077cc;
+    color: #fff;
+}
+
+.card:hover {
+    transform: translateY(-10px); /* Slight lift effect */
+    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.3); /* Enhanced shadow when hovering */
+}
+
+footer {
+    background-color: #1f1f1f;
+    padding: 20px 0;
+    text-align: center;
+}
+
+.social-icons {
+    margin: 20px 0;
+}
+
+.social-icons a {
+    margin: 0 10px;
+    color: #e0e0e0; /* Light color for the icons */
+    transition: color 0.3s;
+}
+
+.social-icons a:hover {
+    color: #ff8c00; /* Dark orange color on hover */
+}
+
+.footer-text {
+    font-size: 0.8em;
+    color: rgba(224, 224, 224, 0.7); /* Slightly transparent light text */
+}
